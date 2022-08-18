@@ -1,0 +1,31 @@
+# Copyright (C) 2022 venujast
+# Copyright (C) 2021 @themiyukixbot
+
+# This file is part of @themiyukixbot (Telegram Bot)
+
+from Miyuki import *
+import pymongo
+
+myclient = pymongo.MongoClient(DB_URI)
+dbx = myclient["venuja"]
+nsfwdb = dbx['nsfw']
+
+async def is_nsfw_on(chat_id: int) -> bool:
+    chat = await nsfwdb.find_one({"chat_id": chat_id})
+    if not chat:
+        return False
+    return True
+
+
+async def nsfw_on(chat_id: int):
+    is_nsfw = await is_nsfw_on(chat_id)
+    if is_nsfw:
+        return
+    return await nsfwdb.insert_one({"chat_id": chat_id})
+
+
+async def nsfw_off(chat_id: int):
+    is_nsfw = await is_nsfw_on(chat_id)
+    if not is_nsfw:
+        return
+    return await nsfwdb.delete_one({"chat_id": chat_id})
