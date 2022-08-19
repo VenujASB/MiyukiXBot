@@ -19,6 +19,7 @@ nightmod =db.nightmode2
 taggeddb = db.tagallert
 lockdb = db.lockdb1
 botlock =db.botlock
+afkusers = db.afkusers
 
 
 #my method
