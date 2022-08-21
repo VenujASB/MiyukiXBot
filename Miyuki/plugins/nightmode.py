@@ -24,7 +24,7 @@ def get_info(id):
 @app.on_message(command(NMODE) & can_change_filter)
 @language
 async def customize_night(client, message: Message, _):
-    rose = await message.reply(_["nm2"])
+    miyuki = await message.reply(_["nm2"])
     if message.chat.type == "private":
         return await miyuki.edit(_["nm5"])
     if message.chat.type == "channel":
