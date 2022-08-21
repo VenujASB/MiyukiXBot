@@ -35,7 +35,7 @@ async def customize_night(client, message: Message, _):
             nightmod.delete_one({"id": message.chat.id})
             return 
         if len(message.command) < 3:
-            return await rose.edit(_["nm11"])
+            return await miyuki.edit(_["nm11"])
         if "|" in parameter:
             zone, ctime, otime = parameter.split("|")
         else:
