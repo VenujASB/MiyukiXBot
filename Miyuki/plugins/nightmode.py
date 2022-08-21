@@ -26,7 +26,7 @@ def get_info(id):
 async def customize_night(client, message: Message, _):
     rose = await message.reply(_["nm2"])
     if message.chat.type == "private":
-        return await rose.edit(_["nm5"])
+        return await miyuki.edit(_["nm5"])
     if message.chat.type == "channel":
         return
     else:
