@@ -153,7 +153,7 @@ async def night_mode_off(_, message):
             await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @TheMiyukiXBot**")
 
 
-__MODULE__ = Nightmode
+__MODULE__ = "Nightmode"
 __HELP__ = """
 Tired managing group all timeClose your group at at a given time and open back at a given time
 **Admin Only :**
