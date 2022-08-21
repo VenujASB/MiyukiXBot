@@ -69,7 +69,7 @@ async def customize_night(client, message: Message, _):
                 await asyncio.sleep(2)
                 return await miyuki.edit(f"**Nightmode Updated Successfully in {message.chat.title} chat**")
         nightmod.insert_one({"id": message.chat.id,"valid": True,"zone": zone,"ctime": cctime,"otime": ootime})
-        await rose.edit(f"**Nightmode set successfully in {message.chat.title} chat !**")
+        await miyuki.edit(f"**Nightmode set successfully in {message.chat.title} chat !**")
 
 
 @app.on_message(filters.incoming, group= nm_g)
