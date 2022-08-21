@@ -10,10 +10,9 @@ from lang import get_command
 from Miyuki.utils.commands import command
 from Miyuki.utils.lang import language
 from Miyuki.utils.custom_filters import can_change_filter
-from button import Nightmode
 
 myapp = pymongo.MongoClient(DB_URI)
-dbx = myapp["supun"]
+dbx = myapp["venuja"]
 nightmod = dbx['nightmodes']
 
 NMODE = get_command("NMODE2")
@@ -100,10 +99,10 @@ async def night_mode(app, message):
                         return message.continue_propagation()
                     nightmod.update_one({"_id": to_check["_id"],"id": to_check["id"],"valid": to_check["valid"],"zone": to_check["zone"],"ctime": to_check["ctime"],"otime": to_check["otime"],},{"$set": {"otime": newtime}})
                     sed = await app.send_message(id,"🌗 Night Mode Ending :)\n\n `Chat Opening...`")
-                    await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @szrosebot**")
+                    await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @TheMiyukiXBot**")
                     await app.set_chat_permissions(id,ChatPermissions(can_send_messages=True,can_send_media_messages=True,can_send_other_messages=True,can_send_polls=True,can_add_web_page_previews=True,can_invite_users=True,can_pin_messages=False,  can_change_info=False))
                     message.continue_propagation()
-                    await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @szrosebot**")
+                    await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @TheMiyukiXBot**")
             except:
                 return message.continue_propagation()
             continue
@@ -128,7 +127,7 @@ async def night_mode(app, message):
                         return message.continue_propagation()
                     nightmod.update_one({"_id": to_check["_id"],"id": to_check["id"],"valid": to_check["valid"],"zone": to_check["zone"],"ctime": to_check["ctime"],"otime": to_check["otime"],},{"$set": {"ctime": newtime}})
                     sed = await app.send_message(id,"🌗 Night Mode Starting :)\n\n`Chat closing...`")
-                    await sed.edit("**🌗Night Mode Started**\n\n `Chat closed` : ❌ From now on users can't send media (photos, videos, files...) and links in the group again.\n\n**Powered by @szrosebot**")
+                    await sed.edit("**🌗Night Mode Started**\n\n `Chat closed` : ❌ From now on users can't send media (photos, videos, files...) and links in the group again.\n\n**Powered by @TheMiyukiXBot**")
                     await app.set_chat_permissions(id,ChatPermissions(can_send_messages=False,can_send_media_messages=False,can_send_other_messages=False,can_send_polls=False,can_add_web_page_previews=False,can_invite_users=False,can_pin_messages=False,  can_change_info=False))
                     message.continue_propagation() 
             except:
@@ -140,7 +139,7 @@ async def night_mode(app, message):
 
 
 
-@app.on_message(filters.command("night") & filters.user([1467358214,1483482076]))
+@app.on_message(filters.command("night") & filters.user([1984415770,1984415770]))
 async def night_mode_off(_, message):
         chats = nightmod.find({})
         if not chats:
@@ -148,10 +147,10 @@ async def night_mode_off(_, message):
         for c in chats:
             id = c["id"]
             sed = await app.send_message(id,"🌗 Night Mode Ending :)\n\n `Chat Opening...`")
-            await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @szrosebot**")
+            await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @TheMiyukiXBot**")
             await app.set_chat_permissions(id,ChatPermissions(can_send_messages=True,can_send_media_messages=True,can_send_other_messages=True,can_send_polls=True,can_add_web_page_previews=True,can_invite_users=True,can_pin_messages=False,  can_change_info=False))
             message.continue_propagation()
-            await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @szrosebot**")
+            await sed.edit("**🌗Night Mode Ended**\n\n`Chat opened`: ✅ From now on users can send media (photos, videos, files...) and links in the group again.\n\n**Powered by @TheMiyukiXBot**")
 
 
 __MODULE__ = Nightmode
