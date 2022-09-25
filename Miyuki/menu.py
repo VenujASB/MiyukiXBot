@@ -25,7 +25,7 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ",
-                url=f"https://t.me/VenujaST",
+                url=f"https://t.me/Splash_Pro",
             )
         ],
         [
