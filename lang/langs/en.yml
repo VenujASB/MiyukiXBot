@@ -1,7 +1,7 @@
 name : English
 
 #menu - menu.py
-menu : "Miyuki ✨ was created on **April 12, 2022**. We are currently developing and maintaining the **rosebot** and credits for **supun**, using only the **Pyrogram** libarry.\n\n• **Creator** : [Venuja Sadew](https://t.me/VenujaST)\n• **Language** : [Python 3](https://www.python.org/)\n• **Database** : [Mongo db](https://cloud.mongodb.com/)\n• **Server** : [Heroku](https://heroku.com/)\n• **Build Version** : `1.0.9`\n\n@TheMiyukiXBot"
+menu : "Miyuki ✨ was created on **April 12, 2022**. We are currently developing and maintaining the **rosebot** and credits for **supun**, using only the **Pyrogram** libarry. original work done by @VenujaST\n\n• **Creator** : [Venuja Sadew](https://t.me/VenujaST)\n• **Language** : [Python 3](https://www.python.org/)\n• **Database** : [Mongo db](https://cloud.mongodb.com/)\n• **Server** : [Heroku](https://heroku.com/)\n• **Build Version** : `1.0.9`\n\n@TheMiyukiXBot"
 back : "« Back"
 
 #main - main.py
