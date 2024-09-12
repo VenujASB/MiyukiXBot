@@ -25,7 +25,7 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ",
-                url=f"https://t.me/VenujaST",
+                url=f"https://t.me/Splash_Pro",
             )
         ],
         [
@@ -38,18 +38,18 @@ fbuttons =InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="👥Support Group", url="https://t.me/MiyukiBotSupport"
+                text="👥Support Group", url="https://t.me/acobot_Team"
             ),
             InlineKeyboardButton(
-                text="✨News Channel", url="https://t.me/MiyukiBotUpdates"
+                text="✨News Channel", url="https://t.me/ACOBotsUpdates"
             )
         ], 
         [
             InlineKeyboardButton(
-                text="⚙️Github", url="https://github.com/VenujASB/MiyukiXBot"
+                text="⚙️Github", url="https://github.com/Splashpro/MiyukiX"
             ),
             InlineKeyboardButton(
-                text="👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/VenujaST"
+                text="👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Splash_Pro"
             )
         ], 
         [
