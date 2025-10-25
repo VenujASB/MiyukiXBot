@@ -1,9 +1,9 @@
 <img src="https://telegra.ph/file/3a281dd44afdc6acba177.jpg" align="right" width="200" height="200"/>
 
-# Miyuki Bot ✨ <img src="https://img.shields.io/github/v/release/venujasb/sz-rosebot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
-[![Stars](https://img.shields.io/github/stars/venujasb/sz-rosebot?style=flat-square&color=Dark)](https://github.com/VenujASB/MiyukiXBot/stargazers)
-[![Forks](https://img.shields.io/github/forks/venujasb/sz-rosebot?style=flat-square&color=orange)](https://github.com/VenujASB/MiyukiXBot/fork)
-[![Size](https://img.shields.io/github/repo-size/venujasb/sz-rosebot?style=flat-square&color=green)](https://github.com/VenujASB/MiyukiXBot/)   
+# Miyuki Bot ✨ <img src="https://img.shields.io/github/v/release/VenujASB/MiyukiXBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
+[![Stars](https://img.shields.io/github/stars/VenujASB/MiyukiXBot?style=flat-square&color=Dark)](https://github.com/VenujASB/MiyukiXBot/stargazers)
+[![Forks](https://img.shields.io/github/forks/VenujASB/MiyukiXBot?style=flat-square&color=orange)](https://github.com/VenujASB/MiyukiXBot/fork)
+[![Size](https://img.shields.io/github/repo-size/VenujASB/MiyukiXBot?style=flat-square&color=green)](https://github.com/VenujASB/MiyukiXBot/)   
 [![Python](https://img.shields.io/badge/Python-v3.9.9-blue)](https://www.python.org/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/VenujASB/MiyukiXBot/graphs/commit-activity)
 [![Crowdin](https://badges.crowdin.net/szrosebot/localized.svg)]()
